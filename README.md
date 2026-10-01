@@ -1,2 +1,2 @@
 # Maya.com
-pagina de semestre 
+paginas del semestre 
