@@ -1456,3 +1456,44 @@ footer {
     }
 
 }
+
+
+/* --- ARREGLO PARA CELULAR --- */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  /* Que el header no se amontone */
+  header, nav {
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  
+  nav a {
+    font-size: 11px;
+    margin: 3px;
+  }
+
+  /* Texto principal más pequeño */
+  h1 {
+    font-size: 28px !important;
+    line-height: 1.2;
+  }
+
+  /* Las tarjetas de jugadoras en 1 columna, no en 3 */
+  .coleccion, 
+  .jugadoras, 
+  .grid,
+  div[style*="grid"] {
+    grid-template-columns: 1fr !important;
+    display: grid !important;
+  }
+
+  /* Si usas flex para las tarjetas */
+  .card, .jugadora {
+    width: 100% !important;
+    margin-bottom: 15px;
+  }
+}
